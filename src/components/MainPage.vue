@@ -1,17 +1,24 @@
 <script setup>
-import MainLayout from '@/components/MainLayout.vue'
-import LoginPageVue from '@/components/LoginPage.vue';
+
+
+
 </script>
 
 <template>
-  <MainLayout/>
+    <h1>Main Page</h1>
 </template>
 
-<style lang="postcss" scoped>
+<style scoped lang="postcss">
+.wrapper{
+    @apply container mx-auto flex flex-col gap-4 py-4;
+}
+   
 nav {
   @apply flex justify-center space-x-4;
+
   & .router-link-active {
     @apply underline underline-offset-4;
   }
 }
-</style>
+
+</style> 
