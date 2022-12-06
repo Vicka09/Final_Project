@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import {useAuth} from '@/composables/useAuth'
 
+const {isAuthenticated} = useAuth()
 import MainPage from '@/components/MainPage.vue'
 import FinalExam from '@/components/FinalExamPage.vue'
 import FinalGrade from '@/components/FinalGradePage.vue'
 import LoginPage from '@/components/LoginPage.vue'
-import LogoutPage from '@/components/LogoutPage.vue'
 import SemesterPage from '@/components/SemesterPage.vue'
 
 const routes = [
@@ -29,16 +30,17 @@ const routes = [
     name: 'Login',
     component: LoginPage, //() => import('@/components/LoginPage'),
   },
-  {
-    path: '/Logout',
-    name: 'Logout',
-    component: LogoutPage, //() => import('@/components/LogoutPage'),
-  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+})
+
+router.beforeEach((to, _, next) => {
+  if (to.meta.requiresAuth && !isAuthenticated.value)
+    next({ name: 'Login', query: { redirect: to.fullPath } })
+  else next()
 })
 
 export default router

@@ -5,7 +5,6 @@
     <RouterLink to="/FinalGrade">Final Grade Calculator</RouterLink>
     <RouterLink to="/SemesterPage"> Semester Calculator</RouterLink>
     <RouterLink to="/Login">Login</RouterLink>
-    <RouterLink to="/Logout">Logout</RouterLink>
     
   </nav>
 </template>
