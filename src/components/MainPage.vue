@@ -15,7 +15,7 @@
 
 <style scoped lang="postcss">
 .intro-box{
-  @apply mx-auto mt-6 mb-48 p-10 max-w-4xl flex-col rounded-lg bg-amber-100 ;
+  @apply mx-auto mt-6 mb-48 p-10 max-w-4xl flex-col rounded-lg bg-lime-100 ;
 }
  .intro{
   @apply container text-center text-xl justify-center;

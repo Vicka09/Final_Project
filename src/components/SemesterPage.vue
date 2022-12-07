@@ -15,7 +15,7 @@
   @apply text-center text-white bg-emerald-700 max-h-fit text-3xl mb-2;
  }
  .intro-box{
-  @apply mx-auto mt-6 mb-48 p-8 max-w-4xl flex-col rounded-lg bg-amber-100 ;
+  @apply mx-auto mt-6 mb-48 p-8 max-w-4xl flex-col rounded-lg bg-lime-100 ;
 }
 .intro{
   @apply container text-center text-xl justify-center p-4;
