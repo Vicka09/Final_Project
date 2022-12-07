@@ -13,7 +13,7 @@ function Calc()
 </script>
 
 <template>
-<h2>Final Grade Calculator</h2> 
+<h2>Final Exam Calculator</h2> 
 <div class="calcform">
     <div class = "input-info">
     <label> Current Grade</label>

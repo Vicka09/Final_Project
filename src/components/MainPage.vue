@@ -10,17 +10,17 @@
       Make the best of your experience by creating an account! Start today with Grade A and get an Easy A for your School!
       </div>
       </form>
-    </body>
+    </body>/
 </template>
 
 <style scoped lang="postcss">
 .intro-box{
-  @apply mx-auto mt-20 max-w-4xl flex-col rounded-lg bg-amber-100;
+  @apply mx-auto mt-6 mb-48 p-10 max-w-4xl flex-col rounded-lg bg-amber-100 ;
 }
  .intro{
   @apply container text-center text-xl justify-center;
  }
  h1{
-  @apply text-center text-black bg-amber-100 max-h-fit text-3xl;
+  @apply text-center text-white bg-emerald-700 max-h-fit text-3xl;
  }
 </style> 
