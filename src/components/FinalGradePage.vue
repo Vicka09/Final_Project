@@ -1,6 +1,12 @@
-<script>
-
-
+<script setup>
+function Calc()
+{
+    var avg=(document.getElementById("current").value);
+      var final=(document.getElementById("exam-grade").value);
+      var weight=(document.getElementById("weight").value);
+      var total=(avg*(100.0-weight)+final*weight)/100.0;
+      document.getElementById("overall-grade").value=(total.toFixed(2));
+}
 </script>
 
 <template>
@@ -18,7 +24,7 @@
     <label>Final Exam Weight</label>
     <input type = "number" min="0" step="any" id="weight">
     </div>
-    <button type = "button" id="calcGrade" onclick="Calc()" title="Calculate">Calculate Grade</button>
+    <button type = "button" id="calcGrade" @click="Calc()" title="Calculate">Calculate Grade</button>
     <p></p>
     <div class = "input-info">
     <label> Overall Grade</label>
