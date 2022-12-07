@@ -21,6 +21,6 @@
   @apply container text-center text-xl justify-center;
  }
  h1{
-  @apply text-center text-white bg-emerald-700 max-h-fit text-3xl;
+  @apply text-center text-white bg-emerald-700 max-h-fit text-3xl mb-2;
  }
 </style> 

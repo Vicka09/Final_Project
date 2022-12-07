@@ -13,7 +13,7 @@ function Calc()
 </script>
 
 <template>
-<h2>Final Exam Calculator</h2> 
+<h1>Final Exam Calculator</h1> 
 <div class="calcform">
     <div class = "input-info">
     <label> Current Grade</label>
@@ -41,14 +41,14 @@ function Calc()
 main{
     @apply mt-8 flex-col justify-center items-center gap-8;
 }
- h1{
-  @apply text-center text-black bg-amber-100 max-h-fit text-3xl;
+h1{
+  @apply text-center text-white bg-emerald-700 max-h-fit text-3xl mb-2;
  }
  h2{
     @apply text-center text-black text-xl m-6;
  }
  .calcform{
-    @apply max-w-max gap-5 m-auto font-semibold justify-center items-center p-3.5 border-8 border-solid border-yellow-300 rounded-lg shadow-lg;
+   @apply max-w-max gap-5 mx-auto font-semibold justify-center items-center p-6 border-8 border-solid border-yellow-300 rounded-lg shadow-lg;
  }
  .input-info
  {
